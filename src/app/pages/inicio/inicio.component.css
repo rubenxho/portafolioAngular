@@ -11,6 +11,14 @@
     align-items: center;
 }
 
+.inicio{
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
 .inicio_text{
     color: white;
    font-size: 60px;
@@ -21,14 +29,6 @@
 .inicio_text--color{
     color: var(--tertiaryColor);
     
-}
-
-.inicio{
-    max-height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
 }
 
 .inicio_btn{
