@@ -1,0 +1,244 @@
+.container_about{
+    height: 100vh;
+    background-color: black;
+    padding: 0.1px;
+}
+
+.about{
+    height: 100vh;
+    margin: 0px 160px;
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-start;
+    /* border: 1px solid greenyellow; */
+    padding: 50px;
+}
+
+.about_me{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 60px;
+    width: 50%;
+    /* border: 1px solid red; */
+    padding: 20px;
+    padding-top: 0px;
+}
+
+.about_me_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    max-height: 280px;
+    max-width: 280px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.img{
+    height: 100%;
+    width: auto;
+    max-height: 280px;
+    transition: transform 1s ease-out;
+}
+
+.img:hover{
+    transform: scale(1.2);
+}
+
+.about_me_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.icon--size{
+    font-size: 40px;
+    color: rgb(209, 209, 209);
+    margin-bottom: 3px;
+    transition: all 1s ease-out ;
+    
+}
+
+.about_me_text{
+    text-align:justify;
+    border-top: 1px solid rgb(209, 209, 209);
+    padding: 15px 15px;
+    margin: 0px 15px;
+}
+
+.text{
+    font-family: var(--secondaryFont);
+    color: rgb(209, 209, 209);
+    line-height: 150%;
+    transition: all 1s ease-out ;
+    
+}
+
+.about_tecnologias{
+    width: 50%;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 1px solid red; */
+    padding: 20px;
+    padding-top: 0px;
+}
+
+.title{
+    font-family: var(--secondaryFont);
+    font-size: 2rem;
+    color: rgb(209, 209, 209);
+    margin-bottom: 30px;   
+}
+
+.about_tecnologias_box{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.about_tecnologias_box_cuadro{
+    background-color: rgb(26, 26, 26);
+    border-radius: 3px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    transition: all 1s ease-out;
+}
+
+.icon{
+    font-size: 60px;
+    color: rgb(209, 209, 209);
+    margin-bottom: 3px;
+    transition: all 1s ease-out ;
+}
+
+/* Hover icon--html */
+.about_tecnologias_box_cuadro--primero:hover .icon--html{
+    color:#dd4b25
+}
+
+.about_tecnologias_box_cuadro--primero:hover{
+    background-color:rgb(209, 209, 209) ;
+}
+
+.about_tecnologias_box_cuadro--primero:hover .text--html{
+    color: #dd4b25
+}
+
+/* Hover icon--css */
+.about_tecnologias_box_cuadro--segundo:hover .icon--css{
+    color:#146eb0
+}
+
+.about_tecnologias_box_cuadro--segundo:hover{
+    background-color:rgb(209, 209, 209) ;
+}
+
+.about_tecnologias_box_cuadro--segundo:hover .text--css{
+    color: #146eb0
+}
+
+/* Hover icon--ng */
+.about_tecnologias_box_cuadro--tercero:hover .icon--ng{
+    color:rgb(202, 5, 5)
+}
+
+.about_tecnologias_box_cuadro--tercero:hover{
+    background-color:rgb(209, 209, 209) ;
+}
+
+.about_tecnologias_box_cuadro--tercero:hover .text--ng{
+    color:rgb(202, 5, 5)
+}
+
+/* Hover icon--js*/
+.about_tecnologias_box_cuadro--cuarto:hover .icon--js{
+    color:#d6a800
+}
+
+.about_tecnologias_box_cuadro--cuarto:hover{
+    background-color:rgb(209, 209, 209) ;
+}
+
+.about_tecnologias_box_cuadro--cuarto:hover .text--js{
+    color: #d6a800
+}
+
+/* Hover icon--ts */
+.about_tecnologias_box_cuadro--quinto:hover .icon--ts{
+    color:#146eb0
+}
+
+.about_tecnologias_box_cuadro--quinto:hover{
+    background-color:rgb(209, 209, 209) ;
+}
+
+.about_tecnologias_box_cuadro--quinto:hover .text--ts{
+    color: #146eb0
+}
+
+/* Hover icon--node*/
+.about_tecnologias_box_cuadro--sexto:hover .icon--node{
+    color:green
+}
+
+.about_tecnologias_box_cuadro--sexto:hover{
+    background-color:rgb(209, 209, 209) ;
+}
+
+.about_tecnologias_box_cuadro--sexto:hover .text--node{
+    color: green
+}
+
+/* Hover icon--mysql*/
+.about_tecnologias_box_cuadro--septimo:hover .icon--mysql{
+    color: #f29111
+}
+
+.about_tecnologias_box_cuadro--septimo:hover{
+    background-color:rgb(209, 209, 209) ;
+}
+
+.about_tecnologias_box_cuadro--septimo:hover .text--mysql{
+    color: #f29111
+}
+
+/* Hover icon--mongo*/
+.about_tecnologias_box_cuadro--octavo:hover .icon--mongo{
+    color:rgb(0, 150, 0)
+}
+
+.about_tecnologias_box_cuadro--octavo:hover{
+    background-color:rgb(209, 209, 209) ;
+}
+
+.about_tecnologias_box_cuadro--octavo:hover .text--mongo{
+    color:rgb(0, 150, 0)
+}
+
+/* Hover icon--api*/
+.about_tecnologias_box_cuadro--novena:hover .icon--api{
+    color:#146eb0
+}
+
+.about_tecnologias_box_cuadro--novena:hover{
+    background-color:rgb(209, 209, 209) ;
+}
+
+.about_tecnologias_box_cuadro--novena:hover .text--api{
+    color:#146eb0
+}

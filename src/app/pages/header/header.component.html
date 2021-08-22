@@ -1,0 +1,22 @@
+<header class="header" #scroll>
+    <nav class="navbar">
+        
+        <div class="navbar_logo">
+            <a class="logo_text" (click)='cambiarPointer("")' href="#inicio"> 
+                <code>&lt;<code class="logo_text--color">RR</code>/&gt;</code>
+            </a>
+        </div>
+        
+        <div class="navbar_options" #menuResponsive>
+            <a [ngClass]="pointer== 'sobre-mi' ? 'options_text options_text--active' : 'options_text'" (click)='cambiarPointer("sobre-mi")' href="#about"> Sobre mi</a>
+            <a [ngClass]="pointer== 'tecnologias' ? 'options_text options_text--active' : 'options_text'" (click)='cambiarPointer("tecnologias")'> Tecnologias</a>
+            <a [ngClass]="pointer== 'portafolio' ? 'options_text options_text--active' : 'options_text'" (click)='cambiarPointer("portafolio")'> Portafolio</a>
+            <a [ngClass]="pointer== 'contacto' ? 'options_text options_text--active' : 'options_text'" (click)='cambiarPointer("contacto")'> Contacto</a>
+        </div>
+
+        <div class="navbar_icon">
+            <a (click)="desplegarMenu()"><i class="fas fa-bars"></i></a>
+        </div>
+
+    </nav>
+</header>
