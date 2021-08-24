@@ -20,7 +20,7 @@ export class HeaderComponent implements OnInit {
     functionScroll() {
     const verticalOffset = document.documentElement.scrollTop
     this.headerScroll.nativeElement.classList.toggle('scroll',verticalOffset>0)
-    if(verticalOffset==0){this.pointer=""}   
+    if(verticalOffset==0){this.pointer="inicio"}   
 
     console.log(verticalOffset)
   }

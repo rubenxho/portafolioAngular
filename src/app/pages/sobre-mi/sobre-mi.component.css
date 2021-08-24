@@ -243,6 +243,7 @@
     color:#146eb0
 }
 
+/* Responsive */
 @media screen and (max-width:1200px) {
     
     .about{
@@ -437,6 +438,10 @@
 
 @media screen and (max-width:420px) {
     
+    .about{
+        margin: 0px 20px;
+    }
+
     .about_me{
         width: 100%;
     }
@@ -458,7 +463,7 @@
 }
 
 @media screen and (max-width:370px) {
-    
+
     .about_me_img{
         max-height: 200px;
         max-width: 200px;
