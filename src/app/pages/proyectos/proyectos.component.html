@@ -1,58 +1,30 @@
-<section class="container_portafolio" id="portafolio">
+<section class="container_portafolio" id="portafolio" #menuPortafolio>
     
     <div class="portafolio">
         <p class="title">Portafolio</p>
         <p class="text">Alguno de los proyectos en los que he trabajo.</p>
 
         <div class="portafolio_cards">
-            <figure class="portafolio_cards_box">
-                <img src="../../../assets/portafolio.jpg" class="img">
-        
-                <figcaption class="portafolio_cards_box_text">
-                    <p class="card_title"> Portafolio personal</p>
-                    <p class="card_text">Portafolio personal </p>
-                    <p class="card_text">ANGULAR</p>
-                    <div class="portafolio_cards_box_text_btn">
-                        <a class="btn" href=""> <i class="fas fa-globe"></i> Sitio web</a>
-                        <a class="btn" href=""> <i class="fab fa-github"> Repositorio</i></a>
-                    </div>
-                </figcaption>
-        
-            </figure>
-            
-            <figure class="portafolio_cards_box">
-                <img src="../../../assets/urturn.jpg" class="img">
-        
-                <figcaption class="portafolio_cards_box_text">
-                    <p class="card_title"> UrTurn</p>
-                    <p class="card_text">App para la gestion de colas.</p>
-                    <p class="card_text">ANGULAR</p>
-                    <div class="portafolio_cards_box_text_btn">
-                        <a class="btn" href="https://urturn.herokuapp.com/" target="_blank" title="UrTurn Web"> <i class="fas fa-globe"></i> Sitio web</a>
-                        <a class="btn" href="https://github.com/rubenxho/urturnAngular" target="_blank" title="UrTurn Git"> <i class="fab fa-github"> Repositorio</i></a>
-                    </div>
-                </figcaption>
-        
-            </figure>
 
-            <figure class="portafolio_cards_box">
-                <img src="../../../assets/reloj.jpg" class="img">
+            <figure *ngFor="let proyecto of proyectos" class="portafolio_cards_box">
+                <img src="{{proyecto.img}}" class="img">
         
                 <figcaption class="portafolio_cards_box_text">
-                    <p class="card_title"> Reloj digital</p>
-                    <p class="card_text">Reloj digital con dark/light mode.</p>
-                    <p class="card_text">HTML, CSS & JS.</p>
+                    <p class="card_title"> {{proyecto.titulo}}</p>
+                    <p class="card_text">{{proyecto.descripcion}} </p>
+                    <p class="card_text">{{proyecto.tecnologias}}</p>
                     <div class="portafolio_cards_box_text_btn">
-                        <a class="btn" href=""> <i class="fas fa-globe"></i> Sitio web</a>
-                        <a class="btn" href=""> <i class="fab fa-github"> Repositorio</i></a>
+                        <a class="btn" href="{{proyecto.link_web}}" target="_blank" title="Web {{proyecto.titulo}}"> <i class="fas fa-globe"></i> Sitio web</a>
+                        <a class="btn" href="{{proyecto.link_git}}" target="_blank" title="Git {{proyecto.titulo}}"> <i class="fab fa-github"> Repositorio</i></a>
                     </div>
                 </figcaption>
-        
             </figure>
-
 
         </div>
         
-
     </div>
+
+    <!-- Efecto ola -->
+    <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(26, 26, 26);"></path></svg></div>
+
 </section>

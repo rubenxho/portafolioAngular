@@ -10,7 +10,6 @@
     display: flex;
     justify-content: flex-start;
     align-items:center;
-    /* border: 1px solid greenyellow; */
 }
 
 .about_me{
@@ -20,7 +19,6 @@
     align-items: center;
     margin-top: 80px;
     width: 50%;
-    /* border: 1px solid red; */
 }
 
 .about_me_img{
@@ -83,7 +81,6 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    /* border: 1px solid red; */
 }
 
 .title{
@@ -103,7 +100,7 @@
 }
 
 .about_tecnologias_box_cuadro{
-    background-color: rgb(26, 26, 26);
+    background-color: rgb(209, 209, 209);
     border-radius: 3px;
     width: 100px;
     height: 100px;
@@ -127,119 +124,83 @@
 }
 
 /* Hover icon--html */
-.about_tecnologias_box_cuadro--primero:hover .icon--html{
+.icon--html{
     color:#dd4b25
 }
 
-.about_tecnologias_box_cuadro--primero:hover{
-    background-color:rgb(209, 209, 209) ;
-}
-
-.about_tecnologias_box_cuadro--primero:hover .text--html{
+.text--html{
     color: #dd4b25
 }
 
 /* Hover icon--css */
-.about_tecnologias_box_cuadro--segundo:hover .icon--css{
+.icon--css{
     color:#146eb0
 }
 
-.about_tecnologias_box_cuadro--segundo:hover{
-    background-color:rgb(209, 209, 209) ;
-}
-
-.about_tecnologias_box_cuadro--segundo:hover .text--css{
+.text--css{
     color: #146eb0
 }
 
 /* Hover icon--ng */
-.about_tecnologias_box_cuadro--tercero:hover .icon--ng{
+.icon--ng{
     color:rgb(202, 5, 5)
 }
 
-.about_tecnologias_box_cuadro--tercero:hover{
-    background-color:rgb(209, 209, 209) ;
-}
-
-.about_tecnologias_box_cuadro--tercero:hover .text--ng{
+.text--ng{
     color:rgb(202, 5, 5)
 }
 
 /* Hover icon--js*/
-.about_tecnologias_box_cuadro--cuarto:hover .icon--js{
+.icon--js{
     color:#d6a800
 }
 
-.about_tecnologias_box_cuadro--cuarto:hover{
-    background-color:rgb(209, 209, 209) ;
-}
-
-.about_tecnologias_box_cuadro--cuarto:hover .text--js{
+.text--js{
     color: #d6a800
 }
 
 /* Hover icon--ts */
-.about_tecnologias_box_cuadro--quinto:hover .icon--ts{
+.icon--ts{
     color:#146eb0
 }
 
-.about_tecnologias_box_cuadro--quinto:hover{
-    background-color:rgb(209, 209, 209) ;
-}
-
-.about_tecnologias_box_cuadro--quinto:hover .text--ts{
+.text--ts{
     color: #146eb0
 }
 
 /* Hover icon--node*/
-.about_tecnologias_box_cuadro--sexto:hover .icon--node{
+.icon--node{
     color:green
 }
 
-.about_tecnologias_box_cuadro--sexto:hover{
-    background-color:rgb(209, 209, 209) ;
-}
-
-.about_tecnologias_box_cuadro--sexto:hover .text--node{
+.text--node{
     color: green
 }
 
 /* Hover icon--mysql*/
-.about_tecnologias_box_cuadro--septimo:hover .icon--mysql{
+.icon--mysql{
     color: #f29111
 }
 
-.about_tecnologias_box_cuadro--septimo:hover{
-    background-color:rgb(209, 209, 209) ;
-}
-
-.about_tecnologias_box_cuadro--septimo:hover .text--mysql{
+.text--mysql{
     color: #f29111
 }
 
 /* Hover icon--mongo*/
-.about_tecnologias_box_cuadro--octavo:hover .icon--mongo{
+.icon--mongo{
     color:rgb(0, 150, 0)
 }
 
-.about_tecnologias_box_cuadro--octavo:hover{
-    background-color:rgb(209, 209, 209) ;
-}
-
-.about_tecnologias_box_cuadro--octavo:hover .text--mongo{
+.text--mongo{
     color:rgb(0, 150, 0)
 }
 
 /* Hover icon--api*/
-.about_tecnologias_box_cuadro--novena:hover .icon--api{
+.icon--api{
     color:#146eb0
 }
 
-.about_tecnologias_box_cuadro--novena:hover{
-    background-color:rgb(209, 209, 209) ;
-}
-
-.about_tecnologias_box_cuadro--novena:hover .text--api{
+.text--api{
     color:#146eb0
 }
 
@@ -307,122 +268,6 @@
         font-size: 50px;
     }
     
-    /* Hover icon--html */
-    .about_tecnologias_box_cuadro--primero .icon--html{
-        color:#dd4b25
-    }
-    
-    .about_tecnologias_box_cuadro--primero{
-        background-color:rgb(209, 209, 209) ;
-    }
-    
-    .about_tecnologias_box_cuadro--primero .text--html{
-        color: #dd4b25
-    }
-    
-    /* Hover icon--css */
-    .about_tecnologias_box_cuadro--segundo .icon--css{
-        color:#146eb0
-    }
-    
-    .about_tecnologias_box_cuadro--segundo{
-        background-color:rgb(209, 209, 209) ;
-    }
-    
-    .about_tecnologias_box_cuadro--segundo .text--css{
-        color: #146eb0
-    }
-    
-    /* Hover icon--ng */
-    .about_tecnologias_box_cuadro--tercero .icon--ng{
-        color:rgb(202, 5, 5)
-    }
-    
-    .about_tecnologias_box_cuadro--tercero{
-        background-color:rgb(209, 209, 209) ;
-    }
-    
-    .about_tecnologias_box_cuadro--tercero .text--ng{
-        color:rgb(202, 5, 5)
-    }
-    
-    /* Hover icon--js*/
-    .about_tecnologias_box_cuadro--cuarto .icon--js{
-        color:#d6a800
-    }
-    
-    .about_tecnologias_box_cuadro--cuarto{
-        background-color:rgb(209, 209, 209) ;
-    }
-    
-    .about_tecnologias_box_cuadro--cuarto .text--js{
-        color: #d6a800
-    }
-    
-    /* Hover icon--ts */
-    .about_tecnologias_box_cuadro--quinto .icon--ts{
-        color:#146eb0
-    }
-    
-    .about_tecnologias_box_cuadro--quinto{
-        background-color:rgb(209, 209, 209) ;
-    }
-    
-    .about_tecnologias_box_cuadro--quinto .text--ts{
-        color: #146eb0
-    }
-    
-    /* Hover icon--node*/
-    .about_tecnologias_box_cuadro--sexto .icon--node{
-        color:green
-    }
-    
-    .about_tecnologias_box_cuadro--sexto{
-        background-color:rgb(209, 209, 209) ;
-    }
-    
-    .about_tecnologias_box_cuadro--sexto .text--node{
-        color: green
-    }
-    
-    /* Hover icon--mysql*/
-    .about_tecnologias_box_cuadro--septimo .icon--mysql{
-        color: #f29111
-    }
-    
-    .about_tecnologias_box_cuadro--septimo{
-        background-color:rgb(209, 209, 209) ;
-    }
-    
-    .about_tecnologias_box_cuadro--septimo .text--mysql{
-        color: #f29111
-    }
-    
-    /* Hover icon--mongo*/
-    .about_tecnologias_box_cuadro--octavo .icon--mongo{
-        color:rgb(0, 150, 0)
-    }
-    
-    .about_tecnologias_box_cuadro--octavo{
-        background-color:rgb(209, 209, 209) ;
-    }
-    
-    .about_tecnologias_box_cuadro--octavo .text--mongo{
-        color:rgb(0, 150, 0)
-    }
-    
-    /* Hover icon--api*/
-    .about_tecnologias_box_cuadro--novena .icon--api{
-        color:#146eb0
-    }
-    
-    .about_tecnologias_box_cuadro--novena{
-        background-color:rgb(209, 209, 209) ;
-    }
-    
-    .about_tecnologias_box_cuadro--novena .text--api{
-        color:#146eb0
-    }
 }
 
 @media screen and (max-width:510px) {

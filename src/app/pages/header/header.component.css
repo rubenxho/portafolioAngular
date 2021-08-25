@@ -8,8 +8,7 @@
 }
 
 .header.scroll{
-    background-color: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px) saturate(65%) contrast(160%);
+    background-color: rgba(0, 0, 0);
 }
 
 .navbar{
@@ -47,7 +46,7 @@
     padding: 10px;
     border-radius: 1px;
     transition-property: border,color;
-    transition-duration: 1.2s;
+    transition-duration: .5s;
     text-align: center;
     font-family: var(--secondaryFont);
     font-size: 1rem;

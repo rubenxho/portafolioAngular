@@ -1,4 +1,4 @@
-import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, HostListener, Input, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,6 +6,7 @@ import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  @Input() scrollComponentes: number[];
   @ViewChild('menuResponsive') menuResponsive:ElementRef
   @ViewChild('scroll') headerScroll:ElementRef
   @ViewChild('aqui') aqui:ElementRef
@@ -14,15 +15,18 @@ export class HeaderComponent implements OnInit {
 
   constructor() { 
     this.menuDesplegado=false;
+    this.pointer="inicio"
   }
 
   @HostListener("window:scroll", []) 
     functionScroll() {
     const verticalOffset = document.documentElement.scrollTop
     this.headerScroll.nativeElement.classList.toggle('scroll',verticalOffset>0)
-    if(verticalOffset==0){this.pointer="inicio"}   
-
-    console.log(verticalOffset)
+    if(verticalOffset>=0 && verticalOffset<this.scrollComponentes[0]-80){this.pointer="inicio"}
+    else if(verticalOffset>=this.scrollComponentes[0]-80 && verticalOffset<this.scrollComponentes[1]-80){this.pointer="sobre-mi"}  
+    else if(verticalOffset>=this.scrollComponentes[1]-80 && verticalOffset<this.scrollComponentes[1]+200 ) {this.pointer="portafolio"} 
+    else if(verticalOffset>=this.scrollComponentes[1]+200 ) {this.pointer="contacto"} 
+    
   }
 
   desplegarMenu(){
@@ -30,8 +34,7 @@ export class HeaderComponent implements OnInit {
     this.menuDesplegado= !this.menuDesplegado;
   }
 
-  cambiarPointer(posicion:String){
-    this.pointer=posicion;
+  cambiarPointer(){
     if(this.menuDesplegado==true){
       this.desplegarMenu()
     }

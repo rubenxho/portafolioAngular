@@ -1,7 +1,7 @@
-<app-header></app-header>
+<app-header [scrollComponentes]='arrayScroll'></app-header>
 <!-- <router-outlet></router-outlet> -->
 <app-inicio></app-inicio>
-<app-sobre-mi></app-sobre-mi>
-<app-proyectos></app-proyectos>
-prueba
+<app-sobre-mi (eventoScrollAbout)="obtenerScrollAbout($event)"></app-sobre-mi>
+<app-proyectos (eventoScrollPortafolio)="obtenerScrollPortafolio($event)"></app-proyectos>
+<app-contacto></app-contacto>
 
