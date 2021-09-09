@@ -24,7 +24,7 @@ export class ProyectosComponent implements OnInit {
     this.proyectos=[
       new Proyecto("Portafolio personal", "Portafolio personal ","ANGULAR","../../../assets/portafolio.jpg","#","https://github.com/rubenxho/portafolioAngular"),
       new Proyecto("UrTurn", "App para la gestion de colas","ANGULAR","../../../assets/urturn.jpg","https://urturn.herokuapp.com/","https://github.com/rubenxho/urturnAngular"), 
-      new Proyecto("Reloj digital", "Reloj digital con dark/light mode","HTML, CSS & JS","../../../assets/reloj.jpg","#","#"),
+      new Proyecto("Reloj digital", "Reloj digital con dark/light mode","HTML, CSS & JS","../../../assets/reloj.jpg","https://rubenxho.github.io/","https://github.com/rubenxho/rubenxho.github.io"),
     ]
   }
 
